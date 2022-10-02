@@ -6,6 +6,7 @@
     --background-color: #2F303A;
     --secondary-babackground-color: #F5F4FA;
     --card-background: #FFFFFF;
+    --icon-color: #AFB1B8;
 }
 
 p,
@@ -48,6 +49,7 @@ body {
     color: var(--main-color);
     background-color: var(--white-color);
 }
+
 
 .container {
     width: 1200px;
@@ -127,9 +129,48 @@ body {
     color: var(--main-color);
 }
 
+
+.nav-icon {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .current {
     color: var(--accent-color);
 }
+
+
+
+.svg-mail,
+.svg-tel {
+    fill: var(--main-color);
+}
+
+
+.li {
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.nav-item:hover .svg-mail,
+.nav-item:focus .svg-mail {
+    fill: var(--accent-color);
+}
+
+.nav-item:hover .svg-tel,
+.nav-item:focus .svg-tel {
+    fill: var(--accent-color);
+}
+
+
 
 /* Hero */
 
@@ -207,6 +248,23 @@ body {
     gap: 30px;
 }
 
+.advantages-link {
+    display: flex;
+    padding: 25px 100px;
+    background-color: var(--secondary-babackground-color);
+    margin-bottom: 30px;
+}
+
+.advantages-icon {
+    fill: var(--title-color);
+}
+
+
+.advantages-item {
+    background-position: center;
+
+}
+
 .secondary-title {
     font-size: 14px;
     line-height: 1.14;
@@ -256,7 +314,6 @@ body {
 
 .team-item {
     width: calc((100%-90px)/4);
-    /* height: 368px; */
 
     background: var(--card-background);
 
@@ -285,6 +342,86 @@ body {
 .team-position {
     font-size: 16px;
     line-height: 1.19;
+}
+
+.team-networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.team-networks-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-networks-link:hover,
+.team-networks-link:focus {
+    background-color: #2196F3;
+}
+
+.team-networks-icons {
+    fill: #AFB1B8;
+}
+
+
+.team-networks-link:hover .team-networks-icons,
+.team-networks-link:focus .team-networks-icons {
+    fill: var(--white-color);
+
+}
+
+/* Customers */
+
+.customers {
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 30px;
+}
+
+.customers-button {
+    border: 1px solid var(--icon-color);
+    padding: 16px 32px;
+    border-radius: 4px;
+    width: calc((100% - 150px) / 6);
+}
+
+
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 60px;
+    color: var(--icon-color);
+}
+
+.customers-icon {
+    fill: currentColor;
+}
+
+.customers-button:hover,
+.customers-button:focus {
+    border-color: var(--accent-color);
+}
+
+.customers-button:hover .customers-link,
+.customers-button:focus .customers-link {
+    color: var(--accent-color);
+
+
 }
 
 
