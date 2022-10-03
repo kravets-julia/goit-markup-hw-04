@@ -557,6 +557,9 @@ body {
     gap: 30px;
 }
 
+.portfolio-card {
+    text-decoration: none;
+}
 
 .portfolio-inform {
     padding: 20px 24px;
