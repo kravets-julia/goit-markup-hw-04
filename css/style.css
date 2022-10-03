@@ -360,23 +360,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--icon-color);
+}
+
+.team-networks-icons {
+    fill: currentColor;
 }
 
 .team-networks-link:hover,
 .team-networks-link:focus {
     background-color: #2196F3;
-}
-
-.team-networks-icons {
-    fill: #AFB1B8;
+    color: var(--white-color);
 }
 
 
-.team-networks-link:hover .team-networks-icons,
-.team-networks-link:focus .team-networks-icons {
-    fill: var(--white-color);
-
-}
 
 /* Customers */
 
@@ -467,7 +464,48 @@ body {
     color: var(--accent-color);
 }
 
+.join-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
+.join {
+    color: var(--white-color);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    /* -webkit-text-stroke: 1px #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.join-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white-color);
+}
+
+.join-icon {
+    fill: currentColor;
+}
+
+.join-link:hover,
+.join-link:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-flex {
+    display: flex;
+    gap: 70px;
+
+}
 
 /* Portfolio */
 
@@ -540,6 +578,9 @@ body {
 .portfolio-text {
     font-size: 16px;
     line-height: 1.88;
+}
 
-
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
